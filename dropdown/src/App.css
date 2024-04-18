@@ -5,38 +5,52 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text {
+  resize: none;/* para que no se mueva*/
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  /*flexbox */
+  margin-top: 15px;
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  /*tarjeta como flexbox */
 }
 
-.read-the-docs {
-  color: #888;
+.box {
+  flex: 1;
+  /* Hace que las cajas ocupen el mismo espacio dentro de la tarjeta */
+  padding: 2px 55px 2px 55px;
+  /* Añade algo de espacio entre las cajas */
+  border: 2px solid #686868;
+  background-color: #f1e0d08e;
+  white-space: nowrap;
+  /* Evita que el texto se divida en varias líneas */
+}
+
+.title {
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 5px;/*título del contenido */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#914f73af;
+  text-align: center;
+  padding: 20px 65px;
+  font-weight: bold;
 }
